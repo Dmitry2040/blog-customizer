@@ -107,7 +107,7 @@ export const ArticleParamsForm = ({ onChange }: ArticleParamsFormProps) => {
 
 	return (
 		<div ref={rootRef}>
-			<ArrowButton isOpen={false} onClick={toggleSidebarOpen} />
+			<ArrowButton isOpen={sidebarIsOpen} onClick={toggleSidebarOpen} />
 			<aside
 				className={`${styles.container} ${
 					sidebarIsOpen ? styles.container_open : ''
